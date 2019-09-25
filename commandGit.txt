@@ -11,7 +11,7 @@ git commit -m "Commit Inicial"			-> Creamos el commit inicial con el estado del 
 
 - Hasta este momento todo esta en local.
 
-git remote add origin https://github.com/dhyama/por-hacer-node.git	->Indicamos cual es el servidor y repositorio remoto donde vamos a subir el proyecto.
+git remote add origin https://github.com/dhyama/clima-node.git	->Indicamos cual es el servidor y repositorio remoto donde vamos a subir el proyecto.
 git push -u origin master				-> Subimos el commit inicial a la rama master del proyecto.
 
 git tag -a v1.0.0 -m "Primera versión"	-> Generamos un tag para la release y poder descargar todo el proyecto tal cual se encuentra en este momento.

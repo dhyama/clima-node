@@ -1,3 +1,8 @@
+/**
+ * Módulo mediante el que obtenemos la ubicación de una ciudad
+ * API de obtención de localización -> https://rapidapi.com/dev132/api/city-geo-location-lookup
+ */
+
 //Realizamos la importación de la libreria axios para poder hacer llamadas a servicios con respuesta mediante promesas 
 //  (Es igual que la libreria request pero esta ultima funciona con callbacks )
 const axios = require('axios');
@@ -27,7 +32,7 @@ const getLugarLatLon = async(ubicacion) => { //Para utilizar el await necesitamo
     //         console.log(`Error : ${ err}`);
     //     })
 
-    //Realizamos una llamada de tipo get al servicio y recuperamos los resultados mediante promesas
+    //Realizamos una llamada de tipo get al servicio y recuperamos los resultados mediante promesas (await)
     const resp = await instance.get();
     //Comprobamos si hemos obtenido resultados
     if (resp.data.Results.length === 0) {
